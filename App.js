@@ -372,3 +372,61 @@ class Gallimimus extends React.Component {
   }
 }
 
+
+const RootStack = createStackNavigator({
+  Home: HomeScreen,
+  Details: DetailsScreen,
+  Tiranosaurio: Tiranosaurio,
+  Ankilosaurio: Ankilosaurio,
+  Espinosaurio: Espinosaurio,
+  Triceratops: Triceratops,
+  Carcharadontosaurio: Carcharadontosaurio,
+  Velociraptor: Velociraptor,
+  Mutaburrasaurio: Mutaburrasaurio,
+  Carnotauro: Carnotauro,
+  Estegosaurio: Estegosaurio,
+  Gallimimus: Gallimimus
+});
+
+export default createAppContainer(RootStack);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 10
+  },
+  button: {
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
+    padding: 10,
+    width: '80%'
+  },
+  countContainer: {
+    alignItems: 'center',
+    padding: 10
+  },
+  countText: {
+    color: '#FF00FF'
+  },
+  submitButton: {
+    backgroundColor: '#000000',
+    width: '80%',
+    borderRadius: 10,
+    marginLeft: '25%',
+    height: '5%',
+  },
+
+  submitButtonDicc: {
+    backgroundColor: '#000',
+    width: '45%',
+    alignContent: "center"
+  },
+  
+  submitButtonText: {
+    textAlign: 'center',
+    height: 80,
+    fontWeight: "bold",
+    fontSize: 25
+  },
+})
